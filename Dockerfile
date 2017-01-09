@@ -14,6 +14,6 @@ RUN wget "https://github.com/galli-leo/Radarr/releases/download/v$RADARR_TAG/$RA
 
 RUN tar -xvzf /opt/$RADARR_ZIP
 
-VOLUME /config /volume1/downloads/complete/radarr /volume1/video/movies
+VOLUME /config
 
 ENTRYPOINT ["mono", "/opt/Radarr/Radarr.exe", "-data=/config"]
