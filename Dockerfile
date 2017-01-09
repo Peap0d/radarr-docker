@@ -1,6 +1,6 @@
 FROM mono
 
-ARG RADARR_TAG="0.2.0.27"
+ARG RADARR_TAG="0.2.0.32"
 ARG RADARR_FILENAME=Radarr.develop.v${RADARR_TAG}.linux
 ARG RADARR_ZIP=Radarr.develop.${RADARR_TAG}.linux.tar.gz
 
