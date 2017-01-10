@@ -35,9 +35,9 @@ RUN tar -xvzf /opt/$RADARR_ZIP && \
  rm -f "/opt/$RADARR_ZIP"
 
 COPY s6-run /tmp/
-RUN mkdir -p /var/run/s6/services/radarr/ && \
- mv /tmp/s6-run /var/run/s6/services/radarr/run && \
- chmod 755 /var/run/s6/services/radarr/run
+RUN mkdir -p /etc/services.d/radarr/ && \
+ mv /tmp/s6-run /etc/services.d/radarr/run && \
+ chmod 755 /etc/services.d/radarr/run
 
 # ports and volumes
 EXPOSE 7878
